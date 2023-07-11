@@ -1,7 +1,7 @@
 function getForecast() {
 const options = {
   method: 'GET',
-  url: 'http://api.weatherapi.com/v1/forecast.json',
+  url: 'https://api.weatherapi.com/v1/forecast.json',
   params: {
     key: 'f2119a1539f146fd8ef90643231107',
     q: 'London',
