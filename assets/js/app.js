@@ -1,10 +1,10 @@
-function getForecast() {
+function getForecast(city) {
 const options = {
   method: 'GET',
   url: 'https://api.weatherapi.com/v1/forecast.json',
   params: {
     key: 'f2119a1539f146fd8ef90643231107',
-    q: 'London',
+    q: city,
     days: '1',
     aqi: 'no',
     alerts: 'no'
@@ -24,4 +24,5 @@ axios.request(options).then(function (response) {
   console.error(error);
 });
 }
-getForecast();
+let city = prompt("Ingresa la ciudad")
+getForecast(city);
